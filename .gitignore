@@ -31,4 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
-src/main/java/backend/trabalho03/model/
+src/main/java/backend/trabalho03/model/Reproducao.java
+src/main/java/backend/trabalho03/model/Venda.java
+src/main/java/backend/trabalho03/model/ParametroAgua.java
