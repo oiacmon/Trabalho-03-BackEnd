@@ -1,8 +1,13 @@
 package backend.trabalho03.model;
 
 import jakarta.persistence.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDate;
 
+@Data
+@NoArgsConstructor
 @Entity
 public class Venda {
 
@@ -17,8 +22,4 @@ public class Venda {
     private LocalDate dataVenda;
     private Double valor;
     private String comprador;
-
-    public Venda() {}
-
 }
-

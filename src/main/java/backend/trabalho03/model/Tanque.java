@@ -1,8 +1,14 @@
 package backend.trabalho03.model;
 
+
 import jakarta.persistence.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.List;
 
+@Data
+@NoArgsConstructor
 @Entity
 public class Tanque {
 
@@ -21,9 +27,6 @@ public class Tanque {
 
     @OneToMany(mappedBy = "tanque")
     private List<ParametroAgua> parametros;
-
-    public Tanque() {}
-
-
 }
+
 

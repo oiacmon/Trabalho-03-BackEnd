@@ -1,8 +1,13 @@
 package backend.trabalho03.model;
 
 import jakarta.persistence.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDate;
 
+@Data
+@NoArgsConstructor
 @Entity
 public class Peixe {
 
@@ -20,8 +25,6 @@ public class Peixe {
     @ManyToOne
     @JoinColumn(name = "tanque_id")
     private Tanque tanque;
-
-    public Peixe() {}
-
 }
+
 
